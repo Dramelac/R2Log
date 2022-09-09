@@ -9,7 +9,7 @@ long_description = (here / 'README.md').read_text(encoding='utf-8')
 
 setup(
     name='R2Log',
-    version="1.0.0",
+    version="1.0.1",
     license='GNU (GPLv3)',
     author="Dramelac",
     author_email='dramelac@pm.me',

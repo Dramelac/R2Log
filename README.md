@@ -1,4 +1,9 @@
 # R2Log - Ready To Log
+[![PyPI](https://img.shields.io/pypi/v/R2Log?color=success)](https://pypi.org/project/R2Log/)
+[![Python](https://img.shields.io/badge/Python-3.6+-informational)](https://pypi.org/project/R2Log/)
+[![Twitter](https://img.shields.io/twitter/follow/Dramelac_?label=Dramelac_&style=social)](https://twitter.com/intent/follow?screen_name=Dramelac_)
+
+
 Custom overload of the python logger to integrate additional levels (verbose, advanced, success) by integrating Rich for advanced rendering (color, emoji, etc.).
 
 Easy to deploy in a project and to use, ready to go.
@@ -39,24 +44,24 @@ logger.error("Error")
 logger.critical("Critical")
 ```
 
-![Demo log levels](examples/log_levels.png)
+![Demo log levels](https://raw.githubusercontent.com/Dramelac/R2Log/main/examples/log_levels.png)
 
 ## Nice to have
 
 ```python
-from R2Log import logger, ExeLog
+from R2Log import logger, R2Log
 
 logger.setVerbosity(1)
 logger.raw("""Raw text or byte 
 or complex string with special char""")
 logger.empty_line()
 logger.empty_line()
-logger.raw(level=ExeLog.DEBUG, msg="""Debug but 
+logger.raw(level=R2Log.DEBUG, msg="""Debug but 
 with a custom level""")
-logger.raw(level=ExeLog.INFO, msg="""Other INFO raw message but 
+logger.raw(level=R2Log.INFO, msg="""Other INFO raw message but 
 with a custom level""")
 ```
-![Demo Raw logs](examples/raw_logs.png)
+![Demo Raw logs](https://raw.githubusercontent.com/Dramelac/R2Log/main/examples/raw_logs.png)
 
 
 ## Argparse argument and level init
