@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "R2Log"
+dynamic = ["version"]
+authors = [{ name = "Dramelac", email = "dramelac@pm.me" }]
+description = "Simple python3 custom rich logger ready to go."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.6"
+keywords = ['logger', 'dev']
+classifiers = [
+    'Development Status :: 5 - Production/Stable',
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    'rich>=11.2.0'
+]
+
+[tool.setuptools.dynamic]
+version = { attr = "R2Log.__version__" }
+
+[project.urls]
+Repository = "https://github.com/Dramelac/R2Log"
+Issues = "https://github.com/Dramelac/R2Log/issues"
