@@ -1,3 +1,4 @@
+import sys
 import logging
 from typing import Any, cast
 
@@ -89,7 +90,7 @@ class R2Log(logging.Logger):
         """Change default critical text format with rich color support
         Add auto exit."""
         super(R2Log, self).critical("{}[!]{} {}".format("[bold red]", "[/bold red]", msg), *args, **kwargs)
-        exit(1)
+        sys.exit(1)
 
     def success(self, msg: Any, *args: Any, **kwargs: Any) -> None:
         """Add success logging method with text format / rich color support"""
