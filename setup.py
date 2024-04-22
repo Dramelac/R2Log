@@ -2,6 +2,8 @@ import pathlib
 
 from setuptools import setup
 
+from R2Log import __version__
+
 here = pathlib.Path(__file__).parent.resolve()
 
 # Get the long description from the README file
@@ -9,7 +11,7 @@ long_description = (here / 'README.md').read_text(encoding='utf-8')
 
 setup(
     name='R2Log',
-    version="1.0.1",
+    version=__version__,
     license='GNU (GPLv3)',
     author="Dramelac",
     author_email='dramelac@pm.me',
@@ -26,6 +28,8 @@ setup(
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
         "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
         "Operating System :: OS Independent",
     ],

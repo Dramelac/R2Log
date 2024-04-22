@@ -1,9 +1,11 @@
-import sys
 import logging
+import sys
 from typing import Any, cast
 
 from rich.console import Console
 from rich.logging import RichHandler
+
+__version__ = "1.0.2"
 
 
 # Customized logging class
