@@ -19,10 +19,10 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.10"
+          python-version: "3.12"
       - name: Install requirements
         run: python -m pip install --user build
       - name: Build release
-        run: python -m build --sdist --outdir dist/ .
+        run: python -m build --outdir dist/ .
       - name: Publish distribution 📦 to PyPI (prod)
         uses: pypa/gh-action-pypi-publish@release/v1
